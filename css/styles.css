@@ -46,8 +46,8 @@ h1 {
   padding-bottom: 33%;
 }
 
-p {
-
+#header{
+  font-size: 3em;
 }
 
 .tl {
@@ -87,5 +87,5 @@ p {
 }
 
 #playAgain {
-  display: none; 
+  display: none;
 }
