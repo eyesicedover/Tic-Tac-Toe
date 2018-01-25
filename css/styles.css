@@ -85,3 +85,7 @@ p {
   border-bottom: none;
   border-right: none;
 }
+
+#playAgain {
+  display: none; 
+}
