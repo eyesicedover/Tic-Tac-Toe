@@ -7,7 +7,20 @@
 
 This is a skeletal file and code template for building webpages with html, css, bootstrap, javascript, and jQuery. The files include index.html, script.js, styles.css.
 
-## Specs 
+## Specs
+
+1. Player 1 clicks on panel. An X appears on that panel.
+* Example input: Player clicks on top left panel.
+* Example output: Top left panel shows an X.
+
+2. Player 2 clicks on a panel. An O appears on that panel.
+* Example input: Player clicks on top left panel.
+* Example output: Top left panel shows an X.
+
+3. Program runs logic determining whether a player has won after every turn.
+* Example input: Player 1 puts a second X in a row.
+* Example output: The computer calls on backend logic telling it whether 1 of 12 possibilities are true. In this case, Player 1 has not won. Continue to next players turn.
+
 
 ## Built With
 
