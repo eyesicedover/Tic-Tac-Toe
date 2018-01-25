@@ -18,7 +18,6 @@ Board.prototype.win = function(player) {
     } else {
       char = "O";
     }
-    debugger;
   if (this.tl === char && this.tm === char && this.tr === char ) {
     return true;
   } else if (this.ml === char && this.mm === char && this.mr === char) {
@@ -35,6 +34,8 @@ Board.prototype.win = function(player) {
     return true;
   } else if (this.tl === char && this.mm === char && this.br === char) {
     return true;
+  } else if ((this.tl !== "") && (this.tm !== "") && (this.tr !== "") && (this.ml !== "") && (this.mm !== "") && (this.ml !== "") && (this.br !== "") && (this.bm !== "") && (this.br !== "")) {
+      return "cat";
   } else {
     return false;
   }
@@ -62,6 +63,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#tl").text("O");
@@ -69,6 +72,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);
@@ -82,6 +87,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#tm").text("O");
@@ -89,6 +96,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);
@@ -102,14 +111,17 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#tr").text("O");
       newBoard.tr = "O";
       var didWin = newBoard.win(player);
-      debugger;
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);
@@ -123,6 +135,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#ml").text("O");
@@ -130,6 +144,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);
@@ -143,6 +159,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#mm").text("O");
@@ -150,6 +168,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);
@@ -163,6 +183,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#mr").text("O");
@@ -170,6 +192,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);
@@ -183,6 +207,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#bl").text("O");
@@ -190,6 +216,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);
@@ -203,6 +231,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#bm").text("O");
@@ -210,6 +240,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);
@@ -223,6 +255,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 1 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     } else {
       $("#br").text("O");
@@ -230,6 +264,8 @@ $(document).ready(function() {
       var didWin = newBoard.win(player);
       if (didWin === true) {
         $(".winText").text("Player 2 Wins!");
+      } else if (didWin === "cat") {
+        $(".winText").text("Cat's Game!");
       }
     }
     player = playerTurn(player);

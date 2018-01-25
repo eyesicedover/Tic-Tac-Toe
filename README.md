@@ -21,25 +21,23 @@ This is a skeletal file and code template for building webpages with html, css, 
 * Example input: Player 1 puts a second X in a row.
 * Example output: The computer calls on backend logic telling it whether 1 of 12 possibilities are true. In this case, Player 1 has not won. Continue to next players turn.
 
+4. Run through steps one through three until either player has three boxes in a row.
+* Example input: Player one has top right box, top middle box, and top left box checked.
+* Example output: "Player One Wins!"
+
+5. If all spaces are checked, but neither player has three in a row, return cat's game.
+* Example input: All boxes filled, no rows of three.  
+* Example output: "Cat's game!"
+
 
 ## Built With
 
 * HTML
 * CSS
 * Bootstrap
-*Javascript
-*jQuery
+* Javascript
+* jQuery
 
-<!--
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-John Rykken
-
--->
 
 ## Versioning
 
@@ -47,12 +45,12 @@ Version 1.0
 
 ## Authors
 
-**John Rykken**
+**John Rykken and Stephanie Faber**
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-Copyright (c) 2018 **_John Rykken_**
+Copyright (c) 2018 **_John Rykken_** **_Stephanie Faber_**
