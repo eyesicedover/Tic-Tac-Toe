@@ -34,7 +34,7 @@ Board.prototype.win = function(player) {
     return true;
   } else if (this.tl === char && this.mm === char && this.br === char) {
     return true;
-  } else if ((this.tl !== "") && (this.tm !== "") && (this.tr !== "") && (this.ml !== "") && (this.mm !== "") && (this.ml !== "") && (this.br !== "") && (this.bm !== "") && (this.br !== "")) {
+  } else if ((this.tl !== "") && (this.tm !== "") && (this.tr !== "") && (this.ml !== "") && (this.mm !== "") && (this.ml !== "") && (this.br !== "") && (this.bm !== "") && (this.bl !== "")) {
       return "cat";
   } else {
     return false;
