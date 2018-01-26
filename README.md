@@ -7,7 +7,7 @@
 
 This is a webpage that allows two human players to play a game of tic-tac-toe. The page declares Tic Tac Toe at the top, along with the names of the creators. The body of the page has the tic-tac-toe hash. You play by clicking in the box you want to put your mark on. The first player is X's, and the second O's. If someone wins, the page will say which player has won. In the case of a tie game, the page will say it's a cat's game. When the game is either won or a draw, a button will appear that refreshes the page and allows the players to go again.
 
-Link to gh-pages: https://eyesicedover.github.io/tic-tac-toe/
+Link to gh-pages: https://eyesicedover.github.io/Tic-Tac-Toe/
 
 ## Specs
 
